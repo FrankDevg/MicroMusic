@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: microservice-user-pod
+  labels:
+    app: microservice-user
+    type: microservice
+spec: 
+  containers:
+    - name: microservice-user-app
+      image: frankdevg/microbrokeruserapi:latest
+      ports: 
+        - containerPort: 80
+      env: 
+        - name: ConnectionStrings__ConexionDB
+          value: Server=mssql-service;Database=sa;User=sa;Password=Andy1997$

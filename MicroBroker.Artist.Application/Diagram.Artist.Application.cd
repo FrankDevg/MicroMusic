@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MicroBroker.Artist.Application.Services.ArtistService">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAgAAACACABAAAAAAAAAEAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Services\ArtistService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="MicroBroker.Artist.Application.Services.PlayerService">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAABAAgAAAABAAAAAIAAAABAAAAABAAA=</HashCode>
+      <FileName>Services\PlayerService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.148" />
+  </Class>
+  <Class Name="MicroBroker.Artist.Application.Services.SongServiceRemote">
+    <Position X="10" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SongServiceRemote.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Interface Name="MicroBroker.Artist.Application.Interfaces.IArtistService">
+    <Position X="1.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAgAAACACABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IArtistService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MicroBroker.Artist.Application.Interfaces.IPlayerService">
+    <Position X="1.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAgAAAAAAAAAAIAAAAAAAAAABAAA=</HashCode>
+      <FileName>Interfaces\IPlayerService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MicroBroker.Artist.Application.Interfaces.ISongServiceRemote">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISongServiceRemote.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>

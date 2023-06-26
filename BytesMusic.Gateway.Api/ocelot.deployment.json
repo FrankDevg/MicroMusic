@@ -1,0 +1,720 @@
+{
+  "Routes": [
+    ///////////////////////////////////////////////////////////////////////
+    /////////////////    Endpoint ALBUM -ALBUM ///////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    {
+      "DownstreamPathTemplate": "/api/Album",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readAlbum",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Album/checkExistAlbum/{albumTitle}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistAlbum/{albumTitle}",
+      "UpstreamHttpMethod": [ "Get" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Album/deleteAlbum/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deleteAlbum/{id}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Album/saveAlbum",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/saveAlbum",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Album/updateAlbum",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/updateAlbum",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    ///////////////////////////////////////////////////////////////////////
+    /////////////////    Endpoint ALBUM - Tracklist //////////////////////
+    /////////////////////////////////////////////////////////////////////
+    {
+      "DownstreamPathTemplate": "/api/Tracklist/checkExistTracklist/{idAlbum}/{idSong}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistTracklist/{idAlbum}/{idSong}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Tracklist/readTracklist/{idAlbum}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readTracklist/{idAlbum}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Tracklist/saveTracklist/{idAlbum}/{idSong}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/saveTracklist/{idAlbum}/{idSong}",
+      "UpstreamHttpMethod": [ "Post" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Tracklist/saveTracklists/{idAlbum}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/saveTracklists/{idAlbum}",
+      "UpstreamHttpMethod": [ "Post" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Tracklist/deleteSongOnTracklist/{idAlbum}/{idSong}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deleteSongOnTracklist/{idAlbum}/{idSong}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Tracklist/deleteTracklist/{idAlbum}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-album-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deleteTracklist/{idAlbum}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    ///////////////////////////////////////////////////////////////////////
+    /////////////////    Endpoint Artist-Artist     //////////////////////
+    /////////////////////////////////////////////////////////////////////
+    {
+      "DownstreamPathTemplate": "/api/Artist/checkExistArtist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistArtist",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Artist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readArtist",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Album/saveArtist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/saveArtist",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Artist/updateArtist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/updateArtist",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Album/deleteArtist/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deleteArtist/{id}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    ///////////////////////////////////////////////////////////////////////
+    /////////////////    Endpoint Artist-Player     //////////////////////
+    /////////////////////////////////////////////////////////////////////
+    {
+      "DownstreamPathTemplate": "/api/Player/checkExistPlayer",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistPlayer",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Player/readPlayer/{idArtist}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readPlayer/{idArtist}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Player/savePlayer/{idArtist}/{idSong}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/savePlayer/{idArtist}/{idSong}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+
+    {
+      "DownstreamPathTemplate": "/api/Player/savePlayers/{idArtist}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/savePlayers/{idArtist}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Player/deletePlayer/{idArtist}/{idSong}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deleteSongOnPlayer/{idArtist}/{idSong}",
+      "UpstreamHttpMethod": [ "Delete" ]
+
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Player/deletePlayer/{idArtist}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-artist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deletePlayer/{idArtist}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    ///////////////////////////////////////////////////////////////////////
+    /////////////////    Endpoint Catalog           //////////////////////
+    /////////////////////////////////////////////////////////////////////
+    {
+      "DownstreamPathTemplate": "/api/Catalog",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-catalog-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readCatalog",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Catalog/checkExistCatalog",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-catalog-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistCatalog",
+      "UpstreamHttpMethod": [ "Post" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Catalog/deleteCatalog/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-catalog-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deleteCatalog/{id}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Catalog/getPlaylistType",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-catalog-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/getPlaylistType",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Catalog/getUserType",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-catalog-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/getUserType",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Catalog/saveCatalog",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-catalog-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/saveCatalog",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Catalog/updateCatalog",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-catalog-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/updateCatalog",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    ///////////////////////////////////////////////////////////////////////
+    /////////////////  Endpoint Playlist-Playlist /////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    {
+      "DownstreamPathTemplate": "/api/Playlist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readPlaylist",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/savePlaylist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/savePlaylist",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/updatePlaylist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/updatePlaylist",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/deletePlaylist/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deletePlaylist/{id}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/checkExistPlaylist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistPlaylist",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/readPlaylistsIduser/{idPlaylist}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readPlaylistsIduser/{idPlaylist}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Playlist/readPlaylist/{idUser}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readPlaylist/{idUser}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    ///////////////////////////////////////////////////////////////////////
+    /////////////////    Endpoint PLAYLIST - PlaylistSong /////////////////
+    /////////////////////////////////////////////////////////////////////
+
+    {
+      "DownstreamPathTemplate": "/api/PlaylistSong/readPlaylistSong/{idPlaylist}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readPlaylistSong/{idPlaylist}",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlaylistSong/savePlaylistSong/{idPlaylist}/{idSong}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/savePlaylistSong/{idPlaylist}/{idSong}",
+      "UpstreamHttpMethod": [ "Post" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlaylistSong/deletePlaylistSong/{idPlaylist}/{idSong}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deletePlaylistSong/{idPlaylist}/{idSong}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlaylistSong/deletePlaylistSong/{idPlaylist}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deletePlaylistSong/{idPlaylist}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/PlaylistSong/checkExistPlaylistSong",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-playlist-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistPlaylistSong",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    //////////////////////////////////////////////////////////////////////
+    /////////////////    Endpoint SONG         ///////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    {
+      "DownstreamPathTemplate": "/api/Song/checkExistSong/{songName}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-song-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistSong/{songName}",
+      "UpstreamHttpMethod": [ "Get" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Song",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-song-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readSong",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Song/readSongs",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-song-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readSongs",
+      "UpstreamHttpMethod": [ "Post" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Song/saveSong",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-song-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/saveSong",
+      "UpstreamHttpMethod": [ "Post" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Song/updateSong",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-song-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/updateSong",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Song/deleteSong/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-song-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deleteSong/{id}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    ///////////////////////////////////////////////////////////////////////
+    /////////////////    Endpoint USER          ///////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    {
+      "DownstreamPathTemplate": "/api/User",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-user-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/readUser",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/savePlaylist",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-user-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/savePlaylistUser",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/saveUser",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-user-service",
+          "Port": "80"
+
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/saveUser",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/updateUser",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-user-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/updateUser",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/deleteUser/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-user-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/deleteUser/{id}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/checkExistUser/{userName}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-user-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistUser/{userName}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/checkExistEmail/{email}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-user-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/checkExistEmail/{email}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/authenticateUser/{userName}/{password}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "microservice-user-service",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/gwbytesmusic/authenticateUser/{userName}/{password}",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+
+  }
+}

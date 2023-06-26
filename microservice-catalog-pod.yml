@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: microservice-catalog-pod
+  labels:
+    app: microservice-catalog
+    type: microservice
+spec: 
+  containers:
+    - name: microservice-catalog-app
+      image: frankdevg/microbrokercatalogapi:latest
+      ports: 
+        - containerPort: 80
+      env: 
+        - name: ConnectionStrings__ConexionDB
+          value: Server=mssql-service;Database=sa;User=sa;Password=Andy1997$

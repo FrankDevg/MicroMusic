@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MicroBroker.Album.Data.Context.AlbumDbContext">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Context\AlbumDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MicroBroker.Album.Data.Context.TracklistDbContext">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Context\TracklistDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MicroBroker.Album.Data.Repository.AlbumRepository">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAABAAAAAAAAAAABIAAAAAAAAAAAIAAAAg=</HashCode>
+      <FileName>Repository\AlbumRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.196" />
+  </Class>
+  <Class Name="MicroBroker.Album.Data.Repository.TracklistRepository">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAIQAAAAAAAAAAAAAAEAAQAAAAAQA=</HashCode>
+      <FileName>Repository\TracklistRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="MicroBroker.Album.Domain.Models.Album">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MicroBroker.Album.Domain.Models.Tracklist">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MicroBroker.Album.Domain.Models.SongRemote">
+    <Position X="2" Y="6" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MicroBroker.Album.Domain.Interfaces.IAlbumRepository">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="MicroBroker.Album.Domain.Interfaces.ITracklistRepository">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>

@@ -1,0 +1,50 @@
+version: '3.4'
+
+services:
+  microbroker.playlist.api:
+    image: ${DOCKER_REGISTRY-}microbrokerplaylistapi
+    build:
+      context: .
+      dockerfile: MicroBroker.Api.Playlist/Dockerfile
+
+  microbroker.catalog.api:
+    image: ${DOCKER_REGISTRY-}microbrokercatalogapi
+    build:
+      context: .
+      dockerfile: MicroBroker.Catalog.Api/Dockerfile
+
+
+  microbroker.artist.api:
+    image: ${DOCKER_REGISTRY-}microbrokerartistapi
+    build:
+      context: .
+      dockerfile: MicroBroker.Artist.Api/Dockerfile
+
+
+  microbroker.album.api:
+    image: ${DOCKER_REGISTRY-}microbrokeralbumapi
+    build:
+      context: .
+      dockerfile: MicroBroker.Album.Api/Dockerfile
+
+
+  bytesmusic.gateway.api:
+    image: ${DOCKER_REGISTRY-}bytesmusicgatewayapi
+    build:
+      context: .
+      dockerfile: BytesMusic.Gateway.Api/Dockerfile
+
+
+  microbroker.song.api:
+    image: ${DOCKER_REGISTRY-}microbrokersongapi
+    build:
+      context: .
+      dockerfile: MicroBroker.Song.Api/Dockerfile
+
+
+  microbroker.user.api:
+    image: ${DOCKER_REGISTRY-}microbrokeruserapi
+    build:
+      context: .
+      dockerfile: MicroBroker.User.Api/Dockerfile
+

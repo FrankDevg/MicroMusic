@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservice-catalog-service
+  labels:
+    name: microservice-catalog-service
+    app: microservice
+spec:
+  type: ClusterIP
+  ports: 
+    - port: 80
+      targetPort: 80
+  selector:
+    app: microservice-catalog
+    type: microservice

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MicroBroker.Catalog.Data.Context.CatalogDbContext" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Context\CatalogDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MicroBroker.Catalog.Data.Repository.CatalogRepository">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAQACJAAAEAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\CatalogRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="MicroBroker.Catalog.Domain.Models.Catalog">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MicroBroker.Catalog.Domain.Models.Constants">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MicroBroker.Catalog.Domain.Interfaces.ICatalogRepository">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>

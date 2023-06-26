@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: microservice-user-deploy
+    labels: 
+      name: microservice-user-deploy
+      app: microservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: microservice-user
+      type: microservice
+  template:
+    metadata:
+      name: microservice-user-pod
+      labels: 
+        app: microservice-user
+        type: microservice
+    spec:
+      containers: 
+          - name: microservice-user-app
+            image: frankdevg/microbrokeruserapi:latest
+            ports: 
+              - containerPort: 80
+            env: 
+              - name: ConnectionStrings__ConexionDB
+                value: Server=mssql-service;Database=Seguridad;User=sa;Password=Andy1997$

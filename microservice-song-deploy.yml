@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: microservice-song-deploy
+    labels: 
+      name: microservice-song-deploy
+      app: microservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: microservice-song
+      type: microservice
+  template:
+    metadata:
+      name: microservice-song-pod
+      labels: 
+        app: microservice-song
+        type: microservice
+    spec:
+      containers: 
+          - name: microservice-song-app
+            image: frankdevg/microbrokersongapi:latest
+            ports: 
+              - containerPort: 80
+            env: 
+              - name: ConnectionStrings__ConexionDB
+                value: Server=mssql-service;Database=Seguridad;User=sa;Password=Andy1997$

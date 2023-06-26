@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: microservice-album-pod
+  labels:
+    app: microservice-album
+    type: microservice
+spec: 
+  containers:
+    - name: microservice-album-app
+      image: frankdevg/microbrokeralbumapi:latest
+      ports: 
+        - containerPort: 80
+      env: 
+        - name: ConnectionStrings__ConexionDB
+          value: Server=mssql-service;Database=sa;User=sa;Password=Andy1997$

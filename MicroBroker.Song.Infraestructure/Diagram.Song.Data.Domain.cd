@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MicroBroker.Song.Data.Context.SongDbContext">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Context\SongDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MicroBroker.Song.Data.Repository.SongRepository">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAiBAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Repository\SongRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.29" />
+  </Class>
+  <Class Name="MicroBroker.Song.Domain.Models.Song">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MicroBroker.Song.Domain.Interfaces.ISongRepository">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>

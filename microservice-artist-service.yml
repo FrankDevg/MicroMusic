@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservice-artist-service
+  labels:
+    name: microservice-artist-service
+    app: microservice
+spec:
+  type: ClusterIP
+  ports: 
+    - port: 80
+      targetPort: 80
+  selector:
+    app: microservice-artist
+    type: microservice

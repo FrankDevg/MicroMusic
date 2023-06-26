@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: microservice-catalog-deploy
+    labels: 
+      name: microservice-catalog-deploy
+      app: microservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: microservice-catalog
+      type: microservice
+  template:
+    metadata:
+      name: microservice-catalog-pod
+      labels: 
+        app: microservice-catalog
+        type: microservice
+    spec:
+      containers: 
+          - name: microservice-catalog-app
+            image: frankdevg/microbrokercatalogapi:latest
+            ports: 
+              - containerPort: 80
+            env: 
+              - name: ConnectionStrings__ConexionDB
+                value: Server=mssql-service;Database=Seguridad;User=sa;Password=Andy1997$

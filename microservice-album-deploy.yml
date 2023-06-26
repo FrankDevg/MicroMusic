@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: microservice-album-deploy
+    labels: 
+      name: microservice-album-deploy
+      app: microservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: microservice-album
+      type: microservice
+  template:
+    metadata:
+      name: microservice-album-pod
+      labels: 
+        app: microservice-album
+        type: microservice
+    spec:
+      containers: 
+          - name: microservice-album-app
+            image: frankdevg/microbrokeralbumapi:latest
+            ports: 
+              - containerPort: 80
+            env: 
+              - name: ConnectionStrings__ConexionDB
+                value: Server=mssql-service;Database=Seguridad;User=sa;Password=Andy1997$

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MicroBroker.Artist.Data.Context.ArtistDbContext">
+    <Position X="1.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Context\ArtistDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MicroBroker.Artist.Data.Context.PlayerDbContext">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Context\PlayerDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MicroBroker.Artist.Data.Repository.ArtistRepository">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAgAABCACABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\ArtistRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.111" />
+  </Class>
+  <Class Name="MicroBroker.Artist.Data.Repository.PlayerRepository">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABABAAgAAAAAAAAAAIAAAAAAAAAABAAA=</HashCode>
+      <FileName>Repository\PlayerRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.12" />
+  </Class>
+  <Class Name="MicroBroker.Artist.Domain.Models.Artist">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MicroBroker.Artist.Domain.Models.Player">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MicroBroker.Artist.Domain.Models.SongRemote">
+    <Position X="1.75" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="MicroBroker.Artist.Domain.Interfaces.IArtistRepository">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="MicroBroker.Artist.Domain.Interfaces.IPlayerRepository">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>

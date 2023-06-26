@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MicroBroker.Infra.Bus.AzureServicesBus">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABIAAAAEAAAAAAgEEAAAAAAAACAAAACAAAgAAAgAA=</HashCode>
+      <FileName>AzureServicesBus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.28" />
+  </Class>
+  <Class Name="MicroBroker.Infra.Bus.AzureServicesBusSettings">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>AzureServicesBusSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MicroBroker.Domain.Core.Bus.IEventBus">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>

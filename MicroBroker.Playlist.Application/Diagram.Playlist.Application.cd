@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MicroBroker.Playlist.Application.Services.PlaylistSongService">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAIAAAAAAAAAAAgAAAAAAAABCAABABAAA=</HashCode>
+      <FileName>Services\PlaylistSongService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.177" />
+  </Class>
+  <Class Name="MicroBroker.Playlist.Application.Services.SongServiceRemote">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\SongServiceRemote.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.148" />
+  </Class>
+  <Class Name="MicroBroker.Playlist.Application.Services.PlaylistService">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgABAAAAAAAAAAAEAAAEAAAAABAAABAAAiA=</HashCode>
+      <FileName>Services\PlaylistService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.109" />
+  </Class>
+  <Interface Name="MicroBroker.Playlist.Application.Interfaces.IPlaylistService">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgAAAAAAAAAAAAAEAAAEAAAAAAAAABAAAiA=</HashCode>
+      <FileName>Interfaces\IPlaylistService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MicroBroker.Playlist.Application.Interfaces.IPlaylistSongService">
+    <Position X="1.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAABABAAA=</HashCode>
+      <FileName>Interfaces\IPlaylistSongService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MicroBroker.Playlist.Application.Interfaces.ISongServiceRemote">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISongServiceRemote.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="8.83" />
+</ClassDiagram>
